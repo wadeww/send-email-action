@@ -1,6 +1,6 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-const nodemailer = rqeuire('nodemailer');
+const nodemailer = require('nodemailer');
 
 try {
   const transporter = nodemailer.createTransport({
