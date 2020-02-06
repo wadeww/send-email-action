@@ -1,0 +1,31 @@
+name: 'Send Email'
+description: 'Send email to list of recipients when workflow finishes'
+inputs:
+    server_address:
+        description: 'URL of SMTP server'
+        required: true
+    port:
+        description: 'Server port'
+        required: true
+    username:
+        description: 'Auth username: Use secret'
+        required: true
+    password:
+        description: 'Auth password: Use secret'
+        required: true
+    from:
+        description: 'Sender email address'
+        required: true
+    to:
+        description: 'Comma-separated recipient list'
+        required: true
+    subject:
+        description: 'Email subject line'
+        required: true
+    body:
+        description: 'Email body text'
+        required: true
+runs:
+    using: 'node12'
+    main: 'index.js'
+
