@@ -1,5 +1,5 @@
 name: 'Send Email Action (Node)'
-description: 'Send email to list of recipients when workflow finishes'
+description: 'Send email to list of recipients in workflow'
 branding:
     icon: mail
     color: orange
