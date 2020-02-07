@@ -37,7 +37,7 @@ This action sends an email to recipient list when a workflow finishes
 
 ```yaml
 - name: Send some mail
-  uses: wadeww/send-email@master
+  uses: wadeww/send-email-action@master
   with:
     server_address: smtp.gmail.com
     port: 465
