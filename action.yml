@@ -1,4 +1,4 @@
-name: 'Send Email'
+name: 'Send Email Action (Node)'
 description: 'Send email to list of recipients when workflow finishes'
 inputs:
     server_address:
