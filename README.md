@@ -1,6 +1,6 @@
 # Send Email action
 
-This action sends an email to recipient list when a workflow finishes
+This action sends an email to recipient list when a workflow finishes.
 
 ## Inputs
 
@@ -44,7 +44,7 @@ This action sends an email to recipient list when a workflow finishes
     username: ${{secrets.MAIL_USERNAME}}
     password: ${{secrets.MAIL_PASSWORD}}
     subject: Workflow finished
-    body: Job completed successfully
+    body: Job completed ${{job.status}}
     to: john@denver.com, elton@john.com
-    from: me@me.com
+    from: Me
 ```
