@@ -21,7 +21,7 @@ try {
 
   transporter.sendMail(options, (error, info) => {
     if (error) {
-      console.log(error);
+      throw new Error('Error sending email:' + error);
     } else {
       console.log('Email sent: ' + info.response);
     }
