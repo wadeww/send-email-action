@@ -6,35 +6,36 @@ This action sends an email to recipient list when a workflow finishes
 
 ### `server_address`
 
-**Required** URL of SMTP server
+**Required** - URL of SMTP server
 
 ### `username`
 
-**Required** Auth username for SMTP server.
+**Required** - Auth username for SMTP server.
 
 ### `password`
 
-**Required** Auth password for SMTP server.
+**Required** - Auth password for SMTP server.
 
 ### `from`
 
-**Required** Sender email address
+**Required** - Sender email address
 
 ### `to`
 
-**Required** Comma-separeated recipient list of addresses
+**Required** - Comma-separeated recipient list of addresses
 
 ### `subject`
 
-**Required** Email subject line
+**Required** - Email subject line
 
 ### `body`
 
-**Required** Email body text
+**Required** - Email body text
 
 
 ## Example usage
 
+```yaml
 - name: Send some mail
   uses: wadeww/send-email@master
   with:
@@ -46,4 +47,4 @@ This action sends an email to recipient list when a workflow finishes
     body: Job completed successfully
     to: john@denver.com, elton@john.com
     from: me@me.com
-
+```
