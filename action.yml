@@ -1,5 +1,8 @@
 name: 'Send Email'
 description: 'Send email to list of recipients when workflow finishes'
+branding:
+    icon: mail
+    color: orange
 inputs:
     server_address:
         description: 'URL of SMTP server'
